@@ -1,0 +1,28 @@
+# Philadelphia Data
+---
+host: emcappdev01
+datacenter:
+  location: Philadelphia # Reference ID: PHL
+  cab: "13"
+  cab_unit: "2"
+  unit: manufacturing
+roles:
+  - webserver
+  - wp_database
+dowtime_sch: |
+  2019-12-01 - Kernel Upgrade
+  2019-12-02 - Security Fix
+Comments: >
+  Experiencing high I/O
+  since 2019-12-03.
+  Currently team is investigating!
+---
+host: emcappdev02
+datacenter:
+  location: Philadelphia
+  cab: "13"
+  cab_unit: "3"
+roles:
+  - webserver
+  - wp_database
+---
